@@ -15,7 +15,7 @@ export default function Hero() {
             arrive at your location on time.
           </p>
 
-          <button className="border text-sm hidden xl:block border-primary rounded-md text-white bg-primary px-10 py-3">
+          <button className="border shadow-md text-sm hidden xl:block border-primary rounded-md text-white bg-primary px-10 py-3">
             Become a driver
           </button>
 
@@ -31,7 +31,7 @@ export default function Hero() {
         </div>
 
         <div className="w-full xl:w-1/2 mt-12 xl:mt-0 flex items-center justify-center">
-          <div className="h-72 relative shadow-lg w-72 ">
+          <div className="h-72 relative shadow-lg w-72 border">
             <Image
               className="rounded-xl "
               src="/images/hero_image.jpg"
@@ -39,6 +39,28 @@ export default function Hero() {
               layout="fill"
               objectFit="cover"
             />
+
+            <div className="w-[100px] h-[100px] absolute bottom-5 shadow-xl rounded-xl -left-6 xl:-left-16">
+              <Image
+                className="rounded-xl"
+                src="/images/hero_image_2.jpg"
+                alt=""
+                width="100px"
+                height="100px"
+                objectFit="cover"
+              />
+            </div>
+
+            <div className="w-[100px] h-[100px] absolute top-5 -right-6 xl:-right-16 shadow-xl rounded-xl">
+              <Image
+                className="rounded-xl"
+                src="/images/hero_image_3.jpg"
+                alt=""
+                width="100px"
+                height="100px"
+                objectFit="cover"
+              />
+            </div>
           </div>
         </div>
       </div>
