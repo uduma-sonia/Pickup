@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import eventEmitter from "utils/eventEmitter";
 import Image from "next/image";
+import heroAnimation from "animations/hero";
+import gsap from "gsap";
 
 export default function Hero() {
   useEffect(() => {
     eventEmitter.once("preloading-complete", () => {
-      console.log("EMITTED");
+      heroAnimation();
     });
   }, []);
 
@@ -13,7 +15,7 @@ export default function Hero() {
     <div className="mx-auto max-w-[1300px] py-14 xl:py-20 px-6 xl:px-16">
       <div className="flex flex-col xl:flex-row justify-between items-center">
         <div className="w-full xl:w-1/2 max-w-[400px] text-center xl:text-left">
-          <h3 className="font-bold text-3xl xl:text-4xl leading-tight">
+          <h3 className="font-bold text-3xl xl:text-4xl leading-tight hero_text">
             Get behind the wheel and get paid
           </h3>
 
