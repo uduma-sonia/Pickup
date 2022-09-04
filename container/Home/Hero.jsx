@@ -24,16 +24,6 @@ export default function Hero() {
               Book now
             </button>
           </div>
-
-          {/* <div className="flex items-center gap-5 xl:hidden justify-center">
-            <button className="border text-sm border-primary rounded-md text-primary w-24 py-2">
-              Driver
-            </button>
-
-            <button className="border text-sm border-primary rounded-md text-white bg-primary w-24 py-2">
-              Rider
-            </button>
-          </div> */}
         </div>
 
         <div className="w-full xl:w-1/2 mt-12 xl:mt-0 flex items-center justify-center">

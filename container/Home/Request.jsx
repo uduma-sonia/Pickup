@@ -18,7 +18,7 @@ export default function Request() {
               className="w-full mt-4 bg-slate-200 h-[50px] rounded-md px-5 text-black"
             />
 
-            <button className="border shadow-md text-sm mt-10 border-white rounded-md text-primary bg-white px-10 py-3">
+            <button className="border shadow-md text-sm mt-10 border-white rounded-md text-primary bg-white px-10 py-3 transition hover:scale-[0.95]">
               Request Now
             </button>
           </div>

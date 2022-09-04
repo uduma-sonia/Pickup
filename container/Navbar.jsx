@@ -22,7 +22,7 @@ export default function Navbar() {
           <div className="items-center font-light gap-5 text-sm text-primary flex xl:hidden">
             <button
               onClick={() => setOpen(true)}
-              className="w-10 py-2 transition hover:scale-[0.95]"
+              className="w-7 py-2 transition hover:scale-[0.95]"
             >
               <div
                 className={`border border-black bg-black transition-all ${

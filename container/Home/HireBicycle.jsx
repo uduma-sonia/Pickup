@@ -14,7 +14,7 @@ export default function HireBicycle() {
           </p>
         </div>
 
-        <button className="border shadow-md text-sm mt-7 xl:mt-0 border-white rounded-md text-primary bg-white px-10 py-3">
+        <button className="border shadow-md text-sm mt-7 xl:mt-0 border-white rounded-md text-primary bg-white px-10 py-3 transition hover:scale-[0.95]">
           Rent a bicycle
         </button>
       </div>

@@ -5,12 +5,11 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 import { RiInstagramFill } from "react-icons/ri";
 import { DiApple } from "react-icons/di";
 import { FcGoogle } from "react-icons/fc";
-import Image from "next/image";
 
 export default function FooterView() {
   return (
     <div className="bg-primary">
-      <div className="mx-auto max-w-[1300px] px-6 xl:px-16 text-slate-100 py-20">
+      <div className="mx-auto max-w-[1300px] px-6 xl:px-16 text-slate-100 pt-20">
         <h1 className="text-3xl font-semibold tracking-tighter">Pickup</h1>
 
         <div className="flex flex-col xl:flex-row justify-between pb-14">
@@ -32,13 +31,13 @@ export default function FooterView() {
             </Link>
           </div>
 
-          <div className="justify-center gap-10 hidden xl:flex">
+          <div className="justify-center gap-10 flex mt-6 xl:mt-0">
             <div className="transition ease-in-out hover:scale-105 duration-300 w-[160px] h-[53px] flex items-center gap-3 cursor-pointer border rounded-lg">
               <DiApple size="1.6rem" />
 
               <div>
                 <p className="text-xs"> Download on the</p>
-                <p className="font-semibold text-lg">App store</p>
+                <p className="font-semibold text-base xl:text-lg">App store</p>
               </div>
             </div>
 
@@ -47,32 +46,34 @@ export default function FooterView() {
 
               <div>
                 <p className="text-xs"> Get it on</p>
-                <p className="font-semibold text-lg">Google Play</p>
+                <p className="font-semibold text-base xl:text-lg">
+                  Google Play
+                </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-slate-400 mx-auto max-w-[1300px] px-6 xl:px-16 text-slate-100 pt-14 flex flex-col xl:flex-row justify-between">
-          <div className="flex gap-7">
-            <p className="cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-10 h-10">
+        <div className="border-t border-slate-400 mx-auto max-w-[1300px] text-slate-100 py-10 flex flex-col xl:flex-row justify-between">
+          <div className="flex">
+            <p className="cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-8 h-8">
               <Link href="/" passHref>
-                <SiFacebook size="1.2rem" />
+                <SiFacebook size="1rem" />
               </Link>
             </p>
-            <p className="cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-10 h-10">
+            <p className="mx-4 cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-8 h-8">
               <Link href="/" passHref>
-                <AiFillTwitterCircle size="1.2rem" />
+                <AiFillTwitterCircle size="1rem" />
               </Link>
             </p>
-            <p className="cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-10 h-10">
+            <p className="cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-8 h-8">
               <Link href="/" passHref>
-                <RiInstagramFill size="1.2rem" />
+                <RiInstagramFill size="1rem" />
               </Link>
             </p>
           </div>
 
-          <p className="text-xs font-extralight">
+          <p className="text-xs font-extralight mt-6 xl:mt-0">
             Copyright © 2022 Pickup Limited. All rights reserved.
           </p>
         </div>
