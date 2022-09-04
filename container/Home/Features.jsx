@@ -81,7 +81,7 @@ export default function Features() {
           <a className="cursor-pointer text-primary font-semibold underline">
             Signup
           </a>{" "}
-          to sign driving
+          to start driving
         </p>
       </div>
     </div>

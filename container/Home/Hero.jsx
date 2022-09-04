@@ -31,7 +31,7 @@ export default function Hero() {
         </div>
 
         <div className="w-full xl:w-1/2 mt-12 xl:mt-0 flex items-center justify-center">
-          <div className="h-72 relative shadow-lg w-72 border">
+          <div className="h-72 relative shadow-lg w-72">
             <Image
               className="rounded-xl "
               src="/images/hero_image.jpg"
