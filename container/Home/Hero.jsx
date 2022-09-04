@@ -34,6 +34,7 @@ export default function Hero() {
               alt=""
               layout="fill"
               objectFit="cover"
+              priority
             />
 
             <div className="w-[100px] h-[100px] absolute bottom-5 shadow-xl rounded-xl -left-6 xl:-left-16">

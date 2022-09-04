@@ -10,6 +10,7 @@ const [
   Logistics,
   RiderFeatures,
   FooterView,
+  Preloader,
 ] = [
   dynamic(() => import("container/Navbar")),
   dynamic(() => import("container/Home/Hero")),
@@ -19,6 +20,7 @@ const [
   dynamic(() => import("container/Home/Logistics")),
   dynamic(() => import("container/Home/RiderFeatures")),
   dynamic(() => import("container/FooterView")),
+  dynamic(() => import("components/Preloader/Preloader")),
 ];
 
 export default function Home() {
@@ -29,6 +31,8 @@ export default function Home() {
         <meta name="description" content="Get behind the wheel and get paid" />
         <link rel="icon" href="/favicon.png" />
       </Head>
+
+      <Preloader />
       <Navbar />
       <Hero />
       <HireBicycle />
@@ -36,7 +40,7 @@ export default function Home() {
       <RiderFeatures />
       <Request />
       <Logistics />
-      <FooterView />
+      {/* <FooterView /> */}
     </>
   );
 }
