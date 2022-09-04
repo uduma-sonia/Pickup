@@ -58,17 +58,23 @@ export default function FooterView() {
           <div className="flex">
             <p className="cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-8 h-8">
               <Link href="/" passHref>
-                <SiFacebook size="1rem" />
+                <span>
+                  <SiFacebook size="1rem" />
+                </span>
               </Link>
             </p>
             <p className="mx-4 cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-8 h-8">
               <Link href="/" passHref>
-                <AiFillTwitterCircle size="1rem" />
+                <span>
+                  <AiFillTwitterCircle size="1rem" />
+                </span>
               </Link>
             </p>
             <p className="cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-8 h-8">
               <Link href="/" passHref>
-                <RiInstagramFill size="1rem" />
+                <span>
+                  <RiInstagramFill size="1rem" />
+                </span>
               </Link>
             </p>
           </div>

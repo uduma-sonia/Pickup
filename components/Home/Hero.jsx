@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import eventEmitter from "utils/eventEmitter";
 import Image from "next/image";
 
 export default function Hero() {
+  useEffect(() => {
+    eventEmitter.once("preloading-complete", () => {
+      console.log("EMITTED");
+    });
+  }, []);
+
   return (
     <div className="mx-auto max-w-[1300px] py-14 xl:py-20 px-6 xl:px-16">
       <div className="flex flex-col xl:flex-row justify-between items-center">

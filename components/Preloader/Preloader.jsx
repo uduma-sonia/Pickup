@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./preloader.module.css";
 import gsap from "gsap";
+import eventEmitter from "utils/eventEmitter";
 
 function Preloader() {
   const leftRef = useRef();
   const rightRef = useRef();
 
-  const cat = () => console.log("completed");
+  const onLoadingComplete = () => eventEmitter.emit("preloading-complete");
 
   useEffect(() => {
     gsap
@@ -23,7 +24,7 @@ function Preloader() {
           right: "-50%",
           duration: 1,
           ease: "circ.in",
-          onComplete: cat,
+          onComplete: onLoadingComplete,
         },
         "-=1"
       );
