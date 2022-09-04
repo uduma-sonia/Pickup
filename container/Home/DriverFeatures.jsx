@@ -51,7 +51,7 @@ export default function DriverFeatures() {
       </div>
 
       <div className="mt-20">
-        <p className="text-center border border-primary rounded-lg w-fit mx-auto p-3">
+        <p className="text-center border border-primary rounded-lg w-fit mx-auto p-3 cursor-pointer transition hover:scale-[0.95] shadow-md">
           <a className="cursor-pointer text-primary font-semibold underline">
             Signup
           </a>{" "}

@@ -32,7 +32,7 @@ export default function Logistics() {
       </div>
 
       <div className="mt-20">
-        <p className="text-center border bg-primary text-slate-100 border-primary rounded-lg w-fit mx-auto py-3 px-6">
+        <p className="text-center shadow-md border bg-primary text-slate-100 border-primary rounded-lg w-fit mx-auto py-3 px-6">
           Coming Soon!
         </p>
       </div>
