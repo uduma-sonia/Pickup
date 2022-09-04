@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Head from "next/head";
 
 const [
   Navbar,
@@ -23,6 +24,11 @@ const [
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Pickup </title>
+        <meta name="description" content="Get behind the wheel and get paid" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <Navbar />
       <Hero />
       <HireBicycle />
