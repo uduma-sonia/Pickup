@@ -15,11 +15,17 @@ export default function Hero() {
             arrive at your location on time.
           </p>
 
-          <button className="border shadow-md text-sm hidden xl:block border-primary rounded-md text-white bg-primary px-10 py-3">
-            Become a driver
-          </button>
+          <div className="flex gap-5">
+            <button className="border shadow-md text-sm border-primary rounded-md text-white bg-primary w-40 py-3 transition hover:scale-[0.95] hover:opacity-90">
+              Become a driver
+            </button>
 
-          <div className="flex items-center gap-5 xl:hidden justify-center">
+            <button className="border text-sm border-primary rounded-md text-primary w-40 py-3 transition hover:scale-[0.95]">
+              Book now
+            </button>
+          </div>
+
+          {/* <div className="flex items-center gap-5 xl:hidden justify-center">
             <button className="border text-sm border-primary rounded-md text-primary w-24 py-2">
               Driver
             </button>
@@ -27,7 +33,7 @@ export default function Hero() {
             <button className="border text-sm border-primary rounded-md text-white bg-primary w-24 py-2">
               Rider
             </button>
-          </div>
+          </div> */}
         </div>
 
         <div className="w-full xl:w-1/2 mt-12 xl:mt-0 flex items-center justify-center">

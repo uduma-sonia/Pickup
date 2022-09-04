@@ -1,5 +1,5 @@
 {
-  "name": "uber2",
+  "name": "pickup",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.12",
+    "@headlessui/react": "^1.6.6",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
