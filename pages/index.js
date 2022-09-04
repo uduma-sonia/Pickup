@@ -40,7 +40,7 @@ export default function Home() {
       <RiderFeatures />
       <Request />
       <Logistics />
-      {/* <FooterView /> */}
+      <FooterView />
     </>
   );
 }
