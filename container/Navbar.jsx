@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="mx-auto max-w-[1300px] h-[80px] px-6 xl:px-16">
+      <div className="mx-auto max-w-[1300px] h-[80px] px-6 xl:px-16 nav_bar opacity-0">
         <div className="h-full flex items-center justify-between">
           <div className="flex items-end gap-10 ">
             <h1 className="text-3xl font-semibold tracking-tighter">Pickup</h1>
