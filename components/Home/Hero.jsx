@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import eventEmitter from "utils/eventEmitter";
 import Image from "next/image";
 import heroAnimation from "animations/hero";
@@ -11,7 +11,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="mx-auto max-w-[1300px] py-14 xl:py-20 px-6 xl:px-16">
+    <div className="mx-auto max-w-[1300px] py-14 xl:py-28 px-6 xl:px-16">
       <div className="flex flex-col xl:flex-row justify-between items-center">
         <div className="w-full xl:w-1/2 max-w-[400px] text-center xl:text-left">
           <h3 className="font-bold text-3xl xl:text-4xl leading-tight hero_text opacity-0">
