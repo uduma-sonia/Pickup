@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import gsap from "gsap";
+import gsap, { Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -7,11 +7,10 @@ export default function HireBicycle() {
   useEffect(() => {
     gsap.timeline().from(".bicycle_animation_btn", {
       opacity: 0,
-      ease: "circ.out",
-      delay: 0.6,
+      ease: Power3.easeIn,
       y: 10,
       scrollTrigger: {
-        trigger: ".bicycle_animation_btn",
+        trigger: ".bicycle_animation_btnw",
       },
     });
   }, []);
@@ -33,6 +32,7 @@ export default function HireBicycle() {
           Rent a bicycle
         </button>
       </div>
+      <div className="h-10 w-10 bicycle_animation_btnw" />
     </div>
   );
 }

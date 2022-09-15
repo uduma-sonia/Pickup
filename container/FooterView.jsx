@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import gsap, { Back } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 import Link from "next/link";
 import { SiFacebook } from "react-icons/si";
 import { AiFillTwitterCircle } from "react-icons/ai";
@@ -7,6 +10,56 @@ import { DiApple } from "react-icons/di";
 import { FcGoogle } from "react-icons/fc";
 
 export default function FooterView() {
+  useEffect(() => {
+    gsap.from(".fb_icon", {
+      opacity: 0,
+      ease: Back.easeOut,
+      duration: 0.4,
+      y: -20,
+      scrollTrigger: {
+        trigger: ".fb_icon",
+      },
+    });
+
+    gsap.from(".twitter_icon", {
+      opacity: 0,
+      ease: Back.easeOut,
+      duration: 0.6,
+      y: -20,
+      scrollTrigger: {
+        trigger: ".twitter_icon",
+      },
+    });
+
+    gsap.from(".ig_icon", {
+      opacity: 0,
+      ease: Back.easeOut,
+      duration: 0.8,
+      y: -20,
+      scrollTrigger: {
+        trigger: ".ig_icon",
+      },
+    });
+
+    gsap.from(".google_download", {
+      opacity: 0,
+      ease: Back.easeOut,
+      duration: 0.2,
+      scrollTrigger: {
+        trigger: ".google_download",
+      },
+    });
+
+    gsap.from(".ios_download", {
+      opacity: 0,
+      ease: Back.easeOut,
+      duration: 0.4,
+      scrollTrigger: {
+        trigger: ".ios_download",
+      },
+    });
+  }, []);
+
   return (
     <div className="bg-primary">
       <div className="mx-auto max-w-[1300px] px-6 xl:px-16 text-slate-100 pt-20">
@@ -32,7 +85,7 @@ export default function FooterView() {
           </div>
 
           <div className="justify-center gap-10 flex mt-6 xl:mt-0">
-            <div className="transition ease-in-out hover:scale-105 duration-300 w-[160px] h-[53px] flex items-center gap-3 cursor-pointer border rounded-lg">
+            <div className="ios_download transition ease-in-out hover:scale-105 duration-300 w-[160px] h-[53px] flex items-center gap-3 cursor-pointer border rounded-lg">
               <DiApple size="1.6rem" />
 
               <div>
@@ -41,7 +94,7 @@ export default function FooterView() {
               </div>
             </div>
 
-            <div className="transition ease-in-out hover:scale-105 duration-300 w-[160px] h-[53px] flex items-center gap-3 cursor-pointer border rounded-lg">
+            <div className="google_download transition ease-in-out hover:scale-105 duration-300 w-[160px] h-[53px] flex items-center gap-3 cursor-pointer border rounded-lg">
               <FcGoogle size="1.6rem" />
 
               <div>
@@ -56,21 +109,21 @@ export default function FooterView() {
 
         <div className="border-t border-slate-400 mx-auto max-w-[1300px] text-slate-100 py-10 flex flex-col xl:flex-row justify-between">
           <div className="flex">
-            <p className="cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-8 h-8">
+            <p className="fb_icon cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-8 h-8">
               <Link href="/" passHref>
                 <span>
                   <SiFacebook size="1rem" />
                 </span>
               </Link>
             </p>
-            <p className="mx-4 cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-8 h-8">
+            <p className="twitter_icon mx-4 cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-8 h-8">
               <Link href="/" passHref>
                 <span>
                   <AiFillTwitterCircle size="1rem" />
                 </span>
               </Link>
             </p>
-            <p className="cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-8 h-8">
+            <p className="ig_icon cursor-pointer hover:-translate-y-3 border border-slate-300 transition duration-300 rounded-lg flex justify-center items-center w-8 h-8">
               <Link href="/" passHref>
                 <span>
                   <RiInstagramFill size="1rem" />

@@ -2,17 +2,17 @@ import { RiWallet3Fill } from "react-icons/ri";
 import { FaCoins } from "react-icons/fa";
 import { ImUserTie } from "react-icons/im";
 import React, { useEffect } from "react";
-import gsap from "gsap";
+import gsap, { Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function DriverFeatures() {
   useEffect(() => {
     gsap.from(".signup_btn", {
+      ease: Power3.easeIn,
       opacity: 0,
-      ease: "circ.out",
-      delay: 0.7,
       y: 10,
+      duration: 0.4,
       scrollTrigger: {
         trigger: ".signup_btn",
       },

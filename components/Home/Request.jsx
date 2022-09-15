@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
-import gsap from "gsap";
+import gsap, { Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -8,14 +8,14 @@ export default function Request() {
   useEffect(() => {
     gsap.from(".request_btn", {
       opacity: 0,
-      ease: "circ.out",
-      delay: 0.7,
+      ease: Power3.easeIn,
       y: 10,
       scrollTrigger: {
         trigger: ".request_btn",
       },
     });
   }, []);
+
   return (
     <div className="bg-primary">
       <div className="mx-auto max-w-[1300px] px-6 xl:px-16 py-20 text-slate-100 ">
