@@ -3,7 +3,11 @@ import gsap, { Back } from "gsap";
 export default function heroAnimation() {
   gsap
     .timeline()
-    .fromTo(".nav_bar", { opacity: 0 }, { opacity: 1, ease: Back.easeOut })
+    .fromTo(
+      ".nav_bar",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, ease: Back.easeOut }
+    )
     .fromTo(
       ".hero_buttons",
       { opacity: 0, y: 150, duration: 0.4 },
