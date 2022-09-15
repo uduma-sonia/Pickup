@@ -1,9 +1,3 @@
-// import React from "react";
-
-// export default function Pdf() {
-//   return <div>TEST PDF PAGE</div>;
-// }
-
 import React, { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 

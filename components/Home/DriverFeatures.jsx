@@ -1,9 +1,24 @@
-import React from "react";
 import { RiWallet3Fill } from "react-icons/ri";
 import { FaCoins } from "react-icons/fa";
 import { ImUserTie } from "react-icons/im";
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function DriverFeatures() {
+  useEffect(() => {
+    gsap.from(".signup_btn", {
+      opacity: 0,
+      ease: "circ.out",
+      delay: 0.7,
+      y: 10,
+      scrollTrigger: {
+        trigger: ".signup_btn",
+      },
+    });
+  }, []);
+
   return (
     <div className="mx-auto max-w-[1300px] px-6 xl:px-16 py-20">
       <div className="mx-auto max-w-[400px] text-center ">
@@ -11,7 +26,7 @@ export default function DriverFeatures() {
           Partner with us
         </h3>
 
-        <p className="text-sm text-primary font-normal my-6">
+        <p className="text-sm text-primary font-normal my-6 feat_trigger">
           Earn money at your own pace.
         </p>
       </div>
@@ -51,7 +66,7 @@ export default function DriverFeatures() {
       </div>
 
       <div className="mt-20">
-        <p className="text-center border border-primary rounded-lg w-fit mx-auto p-3 cursor-pointer transition hover:scale-[0.95] shadow-md">
+        <p className="signup_btn text-center border border-primary rounded-lg w-fit mx-auto p-3 cursor-pointer transition hover:scale-[0.95] shadow-md">
           <a className="cursor-pointer text-primary font-semibold underline">
             Signup
           </a>{" "}

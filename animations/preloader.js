@@ -9,7 +9,7 @@ export default function preloaderAnimation() {
     .to(".preloader_left", {
       delay: 0.3,
       left: "-50%",
-      opacity: 0.5,
+      opacity: 0,
       duration: 1,
       ease: "circ.in",
     })
@@ -18,7 +18,7 @@ export default function preloaderAnimation() {
       {
         right: "-50%",
         duration: 1,
-        opacity: 0.5,
+        opacity: 0,
         ease: "circ.in",
         onComplete: onLoadingComplete,
       },

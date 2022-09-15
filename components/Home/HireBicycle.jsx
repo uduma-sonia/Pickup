@@ -1,14 +1,24 @@
 import React, { useEffect } from "react";
-import BicycleAnimation from "animations/sections";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function HireBicycle() {
   useEffect(() => {
-    BicycleAnimation();
+    gsap.timeline().from(".bicycle_animation_btn", {
+      opacity: 0,
+      ease: "circ.out",
+      delay: 0.6,
+      y: 10,
+      scrollTrigger: {
+        trigger: ".bicycle_animation_btn",
+      },
+    });
   }, []);
 
   return (
     <div className="bg-primary">
-      <div className="mx-auto max-w-[1300px] px-6 xl:px-16 text-slate-100 py-20 flex flex-col xl:flex-row justify-between items-start xl:items-center">
+      <div className="mx-auto max-w-[1300px] px-6 xl:px-16 text-slate-100 py-32 flex flex-col xl:flex-row justify-between items-start xl:items-center">
         <div>
           <h1 className="text-3xl font-semibold">
             Pickup <span className="font-normal text-base">Yourself</span>
