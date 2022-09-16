@@ -17,7 +17,7 @@ export default function HireBicycle() {
 
   return (
     <div className="bg-primary">
-      <div className="mx-auto max-w-[1300px] px-6 xl:px-16 text-slate-100 py-32 flex flex-col xl:flex-row justify-between items-start xl:items-center">
+      <div className="mx-auto max-w-[1300px] px-6 xl:px-16 text-slate-100 py-20 flex flex-col xl:flex-row justify-between items-start xl:items-center">
         <div>
           <h1 className="text-3xl font-semibold">
             Pickup <span className="font-normal text-base">Yourself</span>
