@@ -4,7 +4,7 @@ const PdfComponent = dynamic(() => import("components/pdf"), { ssr: false });
 
 export default function App() {
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-1 lg:grid-cols-2">
       <div>
         <PdfComponent />
       </div>

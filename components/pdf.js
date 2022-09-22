@@ -8,8 +8,7 @@ const ContentTemplate = () => {
     container: {
       backgroundColor: "white",
       padding: "20px",
-      width: "600px",
-      // height: "800px",
+      maxWidth: "600px",
       fontSize: "12px",
       fontFamily: "Inter",
     },
@@ -27,6 +26,7 @@ const ContentTemplate = () => {
 
     doc.html(document.querySelector("#content"), {
       callback: function (pdf) {
+        pdf.setFont("Poppins");
         pdf.save("test");
       },
     });
